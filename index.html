@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/ded9e4ad2c.js" crossorigin="anonymous"></script>
+  <title>Instagram feeds</title>
+</head>
+
+<body>
+  <!--navbar section-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <!--line 21 is the instagram icon in the I class-->
+      <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <form class="d-flex" role="search">
+          <!--button that trigger modal-->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#OpenModal">Create new
+            post
+          </button>
+          <!--dropdown button-->
+          <div class=" dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--modal triggered by the modal button-->
+  <div class="modal fade" id="OpenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--nav pill-->
+
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="Tablist">
+    <li class=" nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#gridView"
+        aria-selected=" true" type="button" aria-controls="detailView"><i class="fa-solid fa-table-cells"></i></button>
+    </li>
+    <li class=" nav-item" role="presentation">
+      <button class="nav-link" id="profile-Tab" data-bs-toggle="Tab" data-bs-target="#detailView" role="tab"
+        aria-controls="detailView" aria-selected="false"><i class="fa-solid fa-asterisk"></i></button>
+    </li>
+
+  </ul>
+
+  <div class="tab-content">
+    <div id="gridView" class="tab-pane fade show active" role="tabpanel" aria-labelledby="grid-tab">
+      <div class="row g-2" style="margin-right: 2px; margin-left: 2px; display: flex; flex-wrap: wrap;">
+        <div class="col-4">
+          <img src="https://th.bing.com/th/id/OIP.m-bRxY8mvGzZNr_5n6zrxQHaFj?w=224&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3"
+            alt="post image" style="width: 100%; height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-4">
+          <img src="https://th.bing.com/th/id/OIP.m-bRxY8mvGzZNr_5n6zrxQHaFj?w=224&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3"
+            alt="post image" style="width: 100%; height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-4">
+          <img src="https://th.bing.com/th/id/OIP.m-bRxY8mvGzZNr_5n6zrxQHaFj?w=224&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3"
+            alt="post image" style="width: 100%; height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-4">
+          <img src="https://th.bing.com/th/id/OIP.m-bRxY8mvGzZNr_5n6zrxQHaFj?w=224&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3"
+            alt="post image" style="width: 100%; height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-4">
+          <img src="https://th.bing.com/th/id/OIP.m-bRxY8mvGzZNr_5n6zrxQHaFj?w=224&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3"
+            alt="post image" style="width: 100%; height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-4">
+          <img src="https://th.bing.com/th/id/OIP.m-bRxY8mvGzZNr_5n6zrxQHaFj?w=224&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3"
+            alt="post image" style="width: 100%; height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-4">
+          <img src="https://th.bing.com/th/id/OIP.m-bRxY8mvGzZNr_5n6zrxQHaFj?w=224&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3"
+            alt="post image" style="width: 100%; height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-4">
+          <img src="https://th.bing.com/th/id/OIP.m-bRxY8mvGzZNr_5n6zrxQHaFj?w=224&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3"
+            alt="post image" style="width: 100%; height: 200px; object-fit: cover;">
+        </div>
+        <div class="col-4">
+          <img src="https://th.bing.com/th/id/OIP.m-bRxY8mvGzZNr_5n6zrxQHaFj?w=224&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3"
+            alt="post image" style="width: 100%; height: 200px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+
+    <div id="detailView" class="tab-pane fade" role="tabpanel" aria-labelledby="detail-tab">
+
+    </div>
+  </div>
+  <sc ript src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
